@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    text-transform: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-bottom: solid 1px #ccc;
+}
+
+header h1 {
+    color: #ff7300;
+}
+
+header ul {
+    display: flex;
+    color: #8d8d8d;
+    justify-content: center;
+}
+
+header li {
+    padding: 8px;
+}
+
+header li a {
+    color: #8d8d8d;
+    text-decoration: none;
+}
+
+.icons img,
+.icons-cel img {
+    max-width: 25px;
+    width: 100%;
+}
+
+.icon-center {
+    margin: 0 30px;
+}
+
+main {
+    flex: 1;
+}
+
+.about div {
+    width: 50%;
+    max-width: 50%;
+}
+
+.about,
+.img {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+}
+
+.about img {
+    width: 100%;
+    max-width: 400px;
+}
+
+section h2 {
+    color: #4f4f6b;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+section h3 {
+    font-weight: 500;
+    color: #8d8d8d;
+    margin: 36px 0;
+}
+
+section button {
+    border: none;
+    padding: 16px 32px;
+    border-radius: 2px;
+    color: white;
+    background-color: #4f4f6b;
+}
+
+.promotion ul {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    text-align: center;
+}
+
+.promotion li {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.promotion p {
+    color: #8d8d8d;
+}
+
+.promotion h3 {
+    color: #4f4f6b;
+    font-size: 22px;
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+.promotion button {
+    padding: 0;
+    color: #8d8d8d;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.sublinhado {
+    border-bottom: 1px solid #ff7300;
+}
+
+.promotion img {
+    width: 150px;
+}
+
+.setas {
+    display: flex;
+    justify-content: center;
+}
+
+.setas p {
+    font-size: 30px;
+    margin: 8px 10px 0 0;
+}
+
+.setas .left {
+    color: #ff7300;
+}
+
+.info {
+    margin: 50px auto;
+    width: 50%;
+    text-align: center;
+}
+
+.info h2 {
+    margin-bottom: 8px;
+}
+
+.product {
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 32.6%);
+    column-gap: 1%;
+}
+
+.product li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product img {
+    width: 150px;
+    margin-bottom: 8px;
+}
+
+.product p {
+    margin: 8px 0;
+    font-size: 12px;
+}
+
+.product h3 {
+    margin: 0;
+    color: #4f4f6b;
+    font-weight: bold;
+}
+
+.product h4 {
+    padding: 0;
+    color: #525252;
+    font: 400;
+    font-size: 12px;
+}
+
+.old-price{
+    color: #8d8d8d;
+}
+
+.product button {
+    padding: 8px 16px;
+    border-radius: 3px;
+}
+
+footer {
+    color: white;
+    background-color: #8d8d8d;
+    font-size: 12px;
+    text-align: center;
+    padding: 8px;
+    margin-top: 50px;
+}
+
+.menu-hamburguer {
+    width: 32px;
+    display: none;
+}
+
+.menu-cel {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .menu-cel {
+        display: none;
+    }
+
+    .container h2 {
+        font-size: 22px;
+    }
+
+    .container h3 {
+        font-size: 12px;
+        margin: 12px 0;
+    }
+
+    section button {
+        border: none;
+        padding: 8px 16px;
+        border-radius: 2px;
+        font-size: 12px;
+        color: white;
+        background-color: #4f4f6b;
+    }
+
+    .promotion ul,
+    .product {
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .promotion .other-var {
+        display: none;
+    }
+
+    .promotion img,
+    .product img {
+        width: 50%;
+    }
+
+    .menu-hamburguer,
+    .menu-cel {
+        display: block;
+        text-align: center;
+    }
+
+    .menus, .icons {
+        display: none;
+    }
+
+    .menu-hamburguer span {
+        height: 2px;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        display: block;
+        margin-bottom: 4px;
+    }
+    
+    .menu-hamburguer:hover {
+        cursor: pointer;
+    }
+    
+    .menu-cel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ccc;
+        padding: 16px;
+        border-radius: 2px;
+        margin-top: -1%;
+    }
+    
+    .menu-cel input{
+        border: solid 1px #202020;
+        border-radius: 5px;
+        margin-right: 2px;
+        margin-left: 22px;
+        padding: 4px;
+    }
+    
+    .menu-cel .icon-center {
+        margin: 0;
+        margin-left: 2px;
+        margin-right: 22px;
+    }
+    
+    .menu-cel ul {
+        margin-top: 16px;
+        display: flex;
+    }
+
+    .menu-cel li {
+        margin: 8px 0;
+    }
+    
+    .menu-cel a {
+        color: #ff7300;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+    
+    .tabs-cel {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        width: 90%;
+    }
+}
